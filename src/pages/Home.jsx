@@ -6,6 +6,9 @@ import { motion, useAnimation } from "framer-motion"
 import TextAnimation from '../components/TextAnimation/TextAnimation'
 
 const Home = () => {
+    const controls = useAnimation();
+    const containerRef = useRef(null);
+    const galleryRef = useRef(null);
     const words = [' BAR À', ' CHOCOLAT', 'PASSIONNÉ', 'À', 'SALON'];
     const [maxScrollValue, setMaxScrollValue] = useState(0);
     const [mouseXPosition, setMouseXPosition] = useState(0);
@@ -58,8 +61,6 @@ const Home = () => {
 
         }
     };
-    const containerRef = useRef(null);
-    const galleryRef = useRef(null);
     useEffect(() => {
         if (containerRef.current && galleryRef.current) {
             const containerWidth = containerRef.current.offsetWidth;
@@ -79,7 +80,7 @@ const Home = () => {
 
 
 
-    const controls = useAnimation()
+
     const handleMouseMove = (event) => {
 
         const mouseX = event.clientX - containerRef.current.getBoundingClientRect().left;
