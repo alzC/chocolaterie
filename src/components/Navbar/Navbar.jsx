@@ -1,8 +1,8 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import '../../styles/Navbar/navbar.css'
 import MenuToggle from '../MenuToggle/MenuToggle'
 import FullPageMenu from '../FullPageMenu/FullPageMenu'
-import { motion, useMotionValueEvent, useScroll } from "framer-motion"
+import { motion } from "framer-motion"
 //chokoanpm
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -11,8 +11,9 @@ const Navbar = () => {
         setIsOpen(!isOpen);
     };
     const [changeBackground, setchangeBackground] = useState(false);
-    const scrolY = () => setchangeBackground(window.scrollY > 40);
-
+    const scrolY = useCallback(() => {
+        setchangeBackground(window.scrollY > 40);
+    }, []);
     useEffect(() => {
         window.addEventListener("scroll", scrolY);
 

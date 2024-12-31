@@ -75,15 +75,13 @@ const Home = () => {
             x: -maxScrollValue * percentage,
             transition: { duration: 0.3, ease: "linear" },
         });
-    }, [mouseXPosition, maxScrollValue]);
+    }, [mouseXPosition, maxScrollValue, controls]);
 
 
 
     const controls = useAnimation()
     const handleMouseMove = (event) => {
-        const mouseXPosition = event.clientX - containerRef.current.getBoundingClientRect().left;
-        const containerWidth = containerRef.current.offsetWidth;
-        const percentage = mouseXPosition / containerWidth;
+
         const mouseX = event.clientX - containerRef.current.getBoundingClientRect().left;
         setMouseXPosition(mouseX);
 

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { Slant as Hamburger, Slant } from 'hamburger-react'
+import { Slant } from 'hamburger-react'
 const MenuToggle = ({ handleClick }) => {
 
 
