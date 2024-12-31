@@ -156,7 +156,7 @@ const Home = () => {
                                 <p> Ouvert : Mardi 14h-18h30    Mercredi au dimanche 10h-18h30</p>
                                 <p> contactez nous par mail à l'adresse suivante : contact@chokoa.fr </p>
                             </motion.div>
-                            <a href="" className='card'>
+                            <a href="/" className='card'>
                                 <img src="assets/icons/elegant_arrow.svg" alt="" height={28} />
                                 <p>Privatisez votre bar</p></a>
                         </div>
