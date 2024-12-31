@@ -17,7 +17,7 @@ const FullPageMenu = ({ isOpen }) => {
                     <ul>
                         <li>
                             <div className="marquee_container">
-                                <a className={isOpen ? '' : ' toggle'} href="#" onMouseOver={handleMouseOver}>La carte</a>
+                                <a className={isOpen ? '' : ' toggle'} href="/" onMouseOver={handleMouseOver}>La carte</a>
                                 <img className='marquee_img' src="/assets/images/boite.jpg" alt="" />
                                 <div className="marquee">
                                     <div className="marquee__inner">
@@ -28,7 +28,7 @@ const FullPageMenu = ({ isOpen }) => {
                         </li>
                         <li>
                             <div className="marquee_container">
-                                <a className={isOpen ? '' : ' toggle'} href="#" onMouseOver={handleMouseOver}>La Chocolaterie</a>
+                                <a className={isOpen ? '' : ' toggle'} href="/" onMouseOver={handleMouseOver}>La Chocolaterie</a>
                                 <img className='marquee_img' src="/assets/images/boite.jpg" alt="" />
                                 <div className="marquee">
                                     <div className="marquee__inner">
@@ -39,7 +39,7 @@ const FullPageMenu = ({ isOpen }) => {
                         </li>
                         <li>
                             <div className="marquee_container">
-                                <a className={isOpen ? '' : ' toggle'} href="#" onMouseOver={handleMouseOver}>Notre savoir-faire</a>
+                                <a className={isOpen ? '' : ' toggle'} href="/" onMouseOver={handleMouseOver}>Notre savoir-faire</a>
                                 <img className='marquee_img' src="/assets/images/boite.jpg" alt="" />
                                 <div className="marquee">
                                     <div className="marquee__inner">
@@ -50,7 +50,7 @@ const FullPageMenu = ({ isOpen }) => {
                         </li>
                         <li>
                             <div className="marquee_container">
-                                <a className={isOpen ? '' : ' toggle'} href="#" onMouseOver={handleMouseOver}>Offrez le Passioné</a>
+                                <a className={isOpen ? '' : ' toggle'} href="/" onMouseOver={handleMouseOver}>Offrez le Passioné</a>
                                 <img className='marquee_img' src="/assets/images/boite.jpg" alt="" />
                                 <div className="marquee">
                                     <div className="marquee__inner">
@@ -61,7 +61,7 @@ const FullPageMenu = ({ isOpen }) => {
                         </li>
                         <li>
                             <div className="marquee_container">
-                                <a className={isOpen ? '' : ' toggle'} href="#" onMouseOver={handleMouseOver}>Contactez Chokoha</a>
+                                <a className={isOpen ? '' : ' toggle'} href="/" onMouseOver={handleMouseOver}>Contactez Chokoha</a>
                                 <img className='marquee_img' src="/assets/images/boite.jpg" alt="" />
                                 <div className="marquee">
                                     <div className="marquee__inner">

@@ -24,8 +24,8 @@ const Navbar = () => {
             <FullPageMenu isOpen={isOpen} />
             <div className="header_booking">
                 <ul>
-                    <li><a href="#">Réservation</a></li>
-                    <li><a href="#">Offrez un Coffret</a></li>
+                    <li><a href="/">Réservation</a></li>
+                    <li><a href="/">Offrez un Coffret</a></li>
                 </ul>
             </div>
             <div className="site_branding" style={{ transform: changeBackground ? "scale(0.7)" : "scale(1)", top: changeBackground ? "20px" : "38px" }}>

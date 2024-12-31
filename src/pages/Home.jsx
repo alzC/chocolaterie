@@ -118,7 +118,7 @@ const Home = () => {
 
                         </div>
                         <div className="footing_left">
-                            <a href="#" className='card'>
+                            <a href="/" className='card'>
                                 <img src="assets/icons/elegant_arrow.svg" alt="" height={28} />
                                 <p>Découvrir la carte</p></a>
                             <motion.div
@@ -175,7 +175,7 @@ const Home = () => {
                                 <p>Dans notre bar à chocolat, vous retrouverez le chocolat sous toutes ses formes et travaillé de toutes les manières.
                                     Chocolat chaud, fondu, glaces trempées dans une cuve de chocolat ainsi que des fondues de chocolat. </p>
                             </div>
-                            <a href="#" className='card'>
+                            <a href="/" className='card'>
                                 <img src="assets/icons/elegant_arrow.svg" alt="" height={28} />
                                 <p>Voir la Carte</p></a>
                         </div>
@@ -231,7 +231,7 @@ const Home = () => {
                                 Dans notre bar à chocolat, vous retrouverez le chocolat sous toutes ses formes et travaillé de toutes les manières.
                                 Chocolat chaud, fondu, glaces trempées dans une cuve de chocolat ainsi que des fondues de chocolat. </p>
                         </div>
-                        <a href="#" className='card'>
+                        <a href="/" className='card'>
                             <img src="assets/icons/elegant_arrow.svg" alt="" height={28} />
                             <p>Découvrez le Bar</p>
                         </a>
@@ -264,9 +264,9 @@ const Home = () => {
                     </div>
                     <hr />
                     <div className="mentions">
-                        <a href="#">Mentions légales</a>
-                        <a href="#">Politique de confidentialité</a>
-                        <a href="#">Plan du site</a>
+                        <a href="/">Mentions légales</a>
+                        <a href="/">Politique de confidentialité</a>
+                        <a href="/">Plan du site</a>
                     </div>
                 </div>
             </div>
