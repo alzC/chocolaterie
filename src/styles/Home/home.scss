@@ -1,0 +1,1071 @@
+.home {
+    width: 100%;
+
+    .one {
+        display: flex;
+        min-height: 1200px;
+
+        @media (max-width:1200px) {
+            flex-direction: column;
+            height: fit-content;
+
+        }
+
+        .one_left {
+            width: 52%;
+            padding: 70px;
+
+            @media (max-width:1200px) {
+                width: 100%;
+                padding: 0px;
+
+
+            }
+
+
+            &::before {
+                content: '_________';
+                display: block;
+                height: 1px;
+                overflow: hidden;
+                width: 5vw;
+                background: black;
+                transform: translate(-120%, 70px);
+
+            }
+
+            .heading_left {
+                text-align: center;
+                margin: 25px auto;
+                width: 70%;
+
+                @media (max-width:1200px) {
+
+                    width: 80%;
+
+
+                }
+
+                .branding_left {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    width: 100%;
+                    text-transform: uppercase;
+                    color: #bcaf87;
+
+                    @media (max-width:1200px) {
+                        margin: auto;
+                        width: 80%;
+                        justify-content: space-between;
+
+
+                    }
+
+                    .logo {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        @media (max-width:1200px) {
+                            font-size: 12px;
+                            width: 50%;
+                            padding: 5px;
+
+
+                        }
+                    }
+                }
+
+                h2 {
+                    margin: 65px 0;
+                    line-height: 35px;
+
+                    @media (max-width:1200px) {
+                        margin: 30px 0;
+                        font-size: 20px;
+
+
+                    }
+                }
+
+                .heading_content {
+                    margin: 25px 0;
+                    line-height: 33px;
+                }
+            }
+
+            .footing_left {
+                height: 72vh;
+                margin: 60px 0;
+                display: flex;
+                align-items: center;
+
+                flex-direction: column;
+                width: 100%;
+
+                @media (max-width:1200px) {
+                    margin: 50px 0;
+                    height: 100vh;
+
+                }
+
+                .card {
+
+                    img {
+                        margin-right: 10px;
+                    }
+
+
+                    display: flex;
+                    align-items: center;
+                    width: fit-content;
+                    color: black;
+                    text-decoration: none;
+
+                    p {
+                        position: relative;
+                        margin-top: -7px;
+                        font-family: Saol Display Regular;
+                        font-size: 45px;
+                        transition: 0.5s ease;
+
+                        @media (max-width:1200px) {
+                            font-size: 25px;
+
+                        }
+
+                        &::after {
+                            position: absolute;
+                            content: '';
+                            top: -5px;
+                            left: -45px;
+                            height: 1px;
+                            width: 110%;
+                            background-color: black;
+                            transition: 0.7s ease;
+
+                            @media (max-width:1200px) {
+                                width: 120%;
+
+                            }
+                        }
+
+                        &::before {
+                            position: absolute;
+                            content: '';
+                            bottom: -10px;
+                            right: -25px;
+                            height: 1px;
+                            width: 110%;
+                            background-color: black;
+                            transition: 0.7s ease;
+
+                            @media (max-width:1200px) {
+                                width: 124%;
+
+                            }
+                        }
+                    }
+
+                    &:hover p::after {
+
+                        width: 0;
+                        background-color: #bcaf87 !important;
+                        transition: background-color 0.2s ease,
+                            width 0.7s ease;
+                    }
+
+                    &:hover p::before {
+                        right: -25px;
+                        left: auto;
+                        width: 0;
+                        background-color: #bcaf87 !important;
+                        transition: background-color 0.2s ease,
+                            width 0.7s ease;
+                    }
+
+                    &:hover p {
+                        transition: 0.2s ease;
+                        color: #bcaf87 !important;
+                    }
+                }
+
+                .dessert {
+                    margin-top: 75px;
+                    background: url('../../../public/assets/images/verre.webp');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center center;
+                    height: 600px;
+                    width: 600px;
+                    transition: 0.5s ease;
+                    object-fit: cover;
+
+                    @media (max-width:1200px) {
+                        margin-top: 40px;
+
+                        background-size: contain;
+                        width: 80%;
+                        max-width: 600px;
+
+
+
+                    }
+                }
+            }
+
+        }
+
+        .one_right {
+            width: 48%;
+            height: 1200px;
+
+            @media (max-width:1200px) {
+                width: 100%;
+
+
+
+
+            }
+
+            .content_reveal {
+
+                @media (max-width:1200px) {
+                    width: 100%;
+
+                    max-height: 100vh;
+
+
+                }
+
+
+
+                .entree_reveal {
+                    height: 0px;
+                    width: 100%;
+                    max-height: 1400px;
+                    object-fit: cover;
+                    transition: 0.5s ease;
+
+
+                }
+            }
+
+            .footing_right {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .coordonees {
+
+                    margin: 25px auto;
+                    line-height: 45px;
+
+                    @media (max-width:1200px) {
+                        margin: 20px 5px;
+                        width: 65%;
+                        line-height: 30px;
+                        padding: 10px 25px;
+                        font-size: 14px;
+                        margin-bottom: 20px;
+                    }
+                }
+
+                .card {
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        margin-right: 15px;
+                    }
+
+
+
+                    color: black;
+                    text-decoration: none;
+
+                    p {
+
+                        position: relative;
+                        width: fit-content;
+
+                        margin-top: -7px;
+                        font-family: Saol Display Regular;
+                        font-size: 45px;
+                        transition: 0.5s ease;
+
+                        @media (max-width:1200px) {
+                            margin-top: 0;
+                            font-size: 25px;
+                        }
+
+                        &::after {
+                            position: absolute;
+                            content: '';
+                            top: 0;
+                            left: -45px;
+                            height: 1px;
+                            width: 110%;
+                            background-color: black;
+                            transition: 0.7s ease;
+
+                            @media (max-width:1200px) {
+                                width: 120%;
+                            }
+                        }
+
+                        &::before {
+                            position: absolute;
+                            content: '';
+                            bottom: -10px;
+                            right: -25px;
+                            height: 1px;
+                            width: 110%;
+                            background-color: black;
+                            transition: 0.7s ease;
+
+                            @media (max-width:1200px) {
+                                width: 125%;
+                            }
+                        }
+                    }
+
+                    &:hover p::after {
+
+                        width: 0;
+                        background-color: #bcaf87 !important;
+                        transition: background-color 0.2s ease,
+                            width 0.7s ease;
+                    }
+
+                    &:hover p::before {
+                        right: -25px;
+                        left: auto;
+                        width: 0;
+                        background-color: #bcaf87 !important;
+                        transition: background-color 0.2s ease,
+                            width 0.7s ease;
+                    }
+
+                    &:hover p {
+                        transition: 0.2s ease;
+                        color: #bcaf87 !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .two {
+        .heading_carte {
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+
+            span {
+                margin: 45px;
+                margin-top: 75px;
+                max-width: 450px;
+                background-color: #bcaf87;
+                height: 1px;
+
+                @media (max-width:1200px) {
+                    width: 20%;
+                    margin: 20px;
+                }
+
+            }
+
+            h2 {
+                text-transform: uppercase;
+                font-family: Saol Display Regular;
+                font-size: 5.5vw;
+
+                @media (max-width:1200px) {
+                    width: 100%;
+                    text-align: center;
+                    font-size: 2.5rem;
+                }
+
+            }
+        }
+
+        .carte {
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: url(../../../public/assets/images/boite.jpg);
+            background-repeat: no-repeat;
+            background-size: 70%;
+
+            @media (max-width:1200px) {
+                background-position: left bottom;
+            }
+
+            @media (max-width:500px) {
+                height: 85vh;
+            }
+
+            .carte_container {
+                background-color: white;
+
+                @media (max-width:1200px) {
+                    width: 95%;
+                }
+
+                @media (max-width:500px) {
+                    width: 90%;
+                }
+            }
+
+
+            .content_carte {
+                background-color: white;
+
+                text-align: center;
+                margin: 0 auto;
+                line-height: 25px;
+
+
+
+                p {
+                    margin: 0 auto;
+                    width: 60%;
+                    margin-top: 45px;
+
+                    @media (max-width:1200px) {
+                        width: 80%;
+                        line-height: 35px;
+
+                    }
+                }
+            }
+
+            .card {
+                margin: 85px 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                @media (max-width:1200px) {
+                    margin: 45px;
+                }
+
+                img {
+                    margin-right: 15px;
+                }
+
+
+
+                color: black;
+                text-decoration: none;
+
+                p {
+
+                    position: relative;
+                    width: fit-content;
+
+                    margin-top: -7px;
+                    font-family: Saol Display Regular;
+                    font-size: 45px;
+                    transition: 0.5s ease;
+
+                    @media (max-width:1200px) {
+                        font-size: 25px;
+                    }
+
+                    &::after {
+                        position: absolute;
+                        content: '';
+                        top: 0;
+                        left: -45px;
+                        height: 1px;
+                        width: 110%;
+                        background-color: black;
+                        transition: 0.7s ease;
+
+                        @media (max-width:1200px) {
+                            top: -4px;
+                            width: 129%;
+                        }
+                    }
+
+                    &::before {
+                        position: absolute;
+                        content: '';
+                        bottom: -10px;
+                        right: -25px;
+                        height: 1px;
+                        width: 110%;
+                        background-color: black;
+                        transition: 0.7s ease;
+
+                        @media (max-width:1200px) {
+
+                            width: 142%;
+                        }
+                    }
+                }
+
+                &:hover p::after {
+
+                    width: 0;
+                    background-color: #bcaf87 !important;
+                    transition: background-color 0.2s ease,
+                        width 0.7s ease;
+                }
+
+                &:hover p::before {
+                    right: -25px;
+                    left: auto;
+                    width: 0;
+                    background-color: #bcaf87 !important;
+                    transition: background-color 0.2s ease,
+                        width 0.7s ease;
+                }
+
+                &:hover p {
+                    transition: 0.2s ease;
+                    color: #bcaf87 !important;
+                }
+            }
+        }
+    }
+
+    .three {
+        margin: 85px 0;
+        height: 200vh;
+
+        @media (max-width:1200px) {
+            height: 170vh;
+        }
+
+        .heading_about {
+            color: #bcaf87;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+
+            span {
+                flex-grow: 1;
+                margin: 75px 45px;
+                background-color: #bcaf87;
+                height: 1px;
+
+                @media (max-width: 1200px) {
+                    margin: 20px;
+                }
+
+                @media (max-width:500px) {
+                    margin: 10px;
+                }
+            }
+
+            h2 {
+                text-transform: uppercase;
+                font-family: Saol Display Regular;
+                font-size: 5.5vw;
+
+                @media (max-width: 1200px) {
+                    text-align: center;
+                    font-size: 2.5rem;
+                }
+            }
+        }
+
+
+        .about {
+            width: 100%;
+            height: 150vh;
+            padding: 50px 0;
+            display: flex;
+            background-color: white;
+            flex-direction: column;
+            align-items: center;
+
+            @media (max-width: 1200px) {
+                padding: 0;
+
+
+            }
+
+            .about_container {
+                background-color: white;
+                width: 100%;
+                height: 125vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+
+            }
+
+
+            .content_about {
+                background-color: white;
+
+                text-align: center;
+                margin: 0 auto;
+
+
+
+                p {
+                    margin: 0 auto;
+                    width: 60%;
+                    line-height: 45px;
+                    margin-top: 45px;
+
+                    @media (max-width: 1200px) {
+                        width: 80%;
+                        margin-top: 35px;
+                        line-height: 38px;
+                    }
+                }
+
+                .slogan {
+                    font-size: 25px;
+
+                    @media (max-width: 1200px) {
+                        font-size: 20px;
+
+                    }
+
+                    span {
+                        color: #bcaf87;
+                    }
+                }
+            }
+
+            .banner_about {
+                background: url("../../../public/assets/images/etablissemment.jpg");
+                background-position: right;
+                background-size: 75% 120%;
+                object-fit: cover;
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 85vh;
+                display: flex;
+                flex-direction: column;
+
+                @media (max-width: 1200px) {
+                    height: 120vh;
+                    background-size: 60% 30%;
+                }
+
+                @media (max-width: 500px) {
+                    height: 150vh !important;
+                    background-position: bottom bottom;
+                }
+
+                .content_banner_about {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    background-color: white;
+                    width: 50%;
+                    padding: 50px;
+
+                    @media (max-width: 1200px) {
+                        width: 100%;
+
+                    }
+
+                    p {
+                        font-family: Saol Display Regular;
+                        font-size: 1.5rem;
+                        padding: 25px;
+
+                        width: 65%;
+                        line-height: 45px;
+
+                        @media (max-width: 1200px) {
+                            text-align: center;
+                            width: 100%;
+                            font-size: 20px;
+                            padding: 0;
+
+                        }
+
+                    }
+                }
+
+                .img_banner_about {
+                    width: 50%;
+                    align-self: flex-end;
+                    display: flex;
+                    justify-content: center;
+
+                    @media (max-width: 1200px) {
+                        align-self: center;
+                        align-items: flex-end;
+                        height: 150vh;
+                    }
+
+                    @media (max-width:500px) {
+                        height: fit-content;
+
+                    }
+
+                    .img_banner {
+                        background: url("../../../public/assets/images/breuvage.jpg");
+                        background-size: cover;
+                        background-position: right;
+                        min-height: 700px;
+                        width: 500px;
+                        overflow: hidden;
+
+                        @media (max-width: 1200px) {
+                            min-height: 200px;
+                            width: 400px;
+                            height: 500px;
+                        }
+
+                        @media (max-width:500px) {
+                            height: 100%;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .four {
+        margin-top: 75px;
+
+        @media (max-width: 1200px) {
+            margin-top: 0px;
+
+        }
+
+        .galery {
+            width: 120%;
+            display: flex;
+            justify-content: space-around;
+
+            @media (max-width: 1200px) {
+                flex-wrap: wrap;
+                width: 100%;
+            }
+
+            .card_img {
+                flex: 0 0 calc(25% - 30px); // 30px is half of the desired gap between images
+                margin-bottom: 60px; // 60px is the desired gap between images
+
+                @media (max-width: 1200px) {
+                    flex: 0 0 calc(50% - 10px); // Adjust the flex-basis value for smaller screens
+                    margin-bottom: 20px; // Adjust the margin-bottom value for smaller screens
+                }
+
+                img {
+                    cursor: crosshair !important;
+                    object-fit: cover;
+                    width: 100%;
+                    height: 500px;
+
+                    @media (max-width: 1200px) {
+                        margin-top: 0px;
+                        height: 300px;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+    .five {
+        margin-top: 150px;
+        height: fit-content;
+        width: 100%;
+
+        .heading_chocolaterie {
+            margin: 0 auto;
+            text-align: center;
+            width: 90%;
+            height: 50vh;
+            background-color: #272F3C;
+
+            @media (max-width:1200px) {
+                height: fit-content;
+                padding: 1px;
+
+            }
+
+            @media (max-width:500px) {
+                height: 100vh;
+            }
+
+            h2 {
+                color: #bcaf87;
+                text-transform: uppercase;
+                font-family: Saol Display Regular;
+                font-size: 5.5vw;
+
+                @media (max-width:1200px) {
+                    font-size: 2.8em;
+                    padding: 30px 0;
+                    margin: 0 auto;
+                }
+            }
+
+            .content_heading {
+                line-height: 38px;
+                margin: 0 auto;
+                margin-top: 65px;
+                color: white;
+                width: 50%;
+
+                @media (max-width:1200px) {
+                    padding: 30px 0;
+                    width: 90%;
+                }
+            }
+
+            .card {
+                margin: 55px 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                @media (max-width:1200px) {
+                    margin: 35px 0;
+                }
+
+                img {
+                    margin-right: 15px;
+                }
+
+
+
+                color: white;
+                text-decoration: none;
+
+                p {
+
+                    position: relative;
+                    width: fit-content;
+
+                    margin-top: -7px;
+                    font-family: Saol Display Regular;
+                    font-size: 45px;
+                    transition: 0.5s ease;
+
+                    @media (max-width:1200px) {
+                        font-size: 1.8em;
+                    }
+
+                    &::after {
+                        position: absolute;
+                        content: '';
+                        top: 0;
+                        left: -45px;
+                        height: 1px;
+                        width: 110%;
+                        background-color: white;
+                        transition: 0.7s ease;
+                    }
+
+                    &::before {
+                        position: absolute;
+                        content: '';
+                        bottom: -10px;
+                        right: -25px;
+                        height: 1px;
+                        width: 110%;
+                        background-color: white;
+                        transition: 0.7s ease;
+                    }
+                }
+
+                &:hover p::after {
+
+                    width: 0;
+                    background-color: #bcaf87 !important;
+                    transition: background-color 0.2s ease,
+                        width 0.7s ease;
+                }
+
+                &:hover p::before {
+                    right: -25px;
+                    left: auto;
+                    width: 0;
+                    background-color: #bcaf87 !important;
+                    transition: background-color 0.2s ease,
+                        width 0.7s ease;
+                }
+
+                &:hover p {
+                    transition: 0.2s ease;
+                    color: #bcaf87 !important;
+                }
+            }
+        }
+
+        .content_chocolaterie {
+            color: white;
+            width: 100%;
+            height: 100vh;
+            background: url("../../../public/assets/images/acceuil.jpg");
+            background-size: cover;
+            background-position: left center;
+            position: relative;
+
+            @media (max-width:1200px) {
+                padding: 5px;
+                height: 53vh;
+            }
+
+            @media (max-width:500px) {
+                height: 90vh;
+            }
+
+            .overlay {
+                padding-right: 175px;
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                background-color: rgba($color: #000000, $alpha: 0.4);
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+
+                @media (max-width:1200px) {
+                    padding: 5px;
+                }
+            }
+
+            p {
+                line-height: 45px;
+                font-size: 25px;
+                width: 50%;
+                text-align: right;
+
+                @media (max-width:1200px) {
+                    margin: 0 auto;
+                    font-size: 1.3em;
+                    width: 90%;
+                }
+            }
+
+        }
+
+        .footing_chocolaterie {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('../../../public/assets/images/beau.jpg');
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: 48% 100%;
+
+            @media (max-width: 1200px) {
+                min-height: 50vh;
+                height: auto;
+                background-size: 40% 100%;
+                background-position: right top;
+                padding-bottom: 0px;
+            }
+
+            @media (max-width:500px) {
+                background-size: 60% 80%;
+            }
+
+            img {
+                margin-left: -150px;
+                height: 549px;
+                width: 661px;
+                object-fit: cover;
+
+                @media (max-width: 1200px) {
+                    height: auto;
+                    width: 35%;
+
+                    max-height: 250px;
+                    min-width: 250px; // Set the max-width to 250px
+                    margin-left: -100px;
+                    margin-top: -40px;
+                    object-fit: cover;
+                }
+
+                @media (max-width:500px) {
+                    min-width: 200px;
+                    margin-left: -150px;
+                }
+
+
+            }
+        }
+    }
+
+    .footer {
+        margin-top: 75px;
+        text-align: center;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .logo {
+            margin-bottom: 50px;
+
+            img {
+                @media (max-width:500px) {
+                    padding: 15px;
+                    width: 95%;
+                }
+            }
+
+            p {
+
+                font-size: 1.8em;
+                color: #bcaf87;
+            }
+
+        }
+
+        hr {
+            width: 70%;
+        }
+
+        .contact {
+            padding: 50px;
+            line-height: 48px;
+        }
+
+        .sociaux {
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+
+            img {
+                margin: 0 10px;
+                cursor: pointer;
+            }
+        }
+
+        .mentions {
+            padding: 50px;
+
+            a {
+                text-decoration: none;
+                color: #000000;
+                border-bottom: 0.5px solid black;
+                padding: 0.5px;
+                margin: 25px;
+            }
+        }
+    }
+}

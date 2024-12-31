@@ -1,0 +1,14 @@
+@import url(//db.onlinewebfonts.com/c/4c4c08af466e9ad071b6d69cf44093df?family=Saol+Display+Regular);
+
+.letterAnimating {
+    font-size: 95px;
+    font-family: Saol Display Regular;
+
+    @media (max-width:1200px) {
+        font-size: 8VW;
+    }
+}
+
+.scroll_container {
+    padding: 30px 0 0 45px;
+}

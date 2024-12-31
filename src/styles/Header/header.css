@@ -1,0 +1,55 @@
+@import url(//db.onlinewebfonts.com/c/4c4c08af466e9ad071b6d69cf44093df?family=Saol+Display+Regular);
+header {
+  height: 105vh;
+  width: 100%;
+  overflow: hidden;
+}
+header .heading {
+  position: relative;
+  height: 100%;
+}
+header .heading .banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+@media (max-width: 1200px) {
+  header .heading .banner {
+    height: 100%;
+    left: -100%;
+  }
+}
+header .heading .horizon_scrolling {
+  color: #bcaf87;
+  font-size: 90px;
+  font-family: Saol Display Regular;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 150px;
+  z-index: 5555555;
+}
+@media (max-width: 1200px) {
+  header .heading .horizon_scrolling {
+    font-size: 40px;
+    bottom: 100px;
+  }
+}
+header .heading .horizon_scrolling.two {
+  right: -250px;
+}
+
+@keyframes slideText {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.animated-text {
+  display: inline-block;
+  white-space: nowrap;
+  animation: slideText 150s linear infinite;
+  overflow: hidden;
+}/*# sourceMappingURL=header.css.map */

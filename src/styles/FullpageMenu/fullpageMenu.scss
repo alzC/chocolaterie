@@ -1,0 +1,172 @@
+.fullPageMenu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 15;
+    height: 10px;
+    width: 100%;
+
+    color: white;
+    display: flex;
+
+    &.toggle {
+
+        animation: hideFullPageMenu 0.5s ease 0.5s forwards;
+
+    }
+
+
+
+    .left_content {
+        content: "";
+        width: 50%;
+        height: 100vh;
+        background-color: #BCAF87;
+        transition: 0.5s ease-out;
+        z-index: 255555;
+
+        &.toggle {
+            transition: 1s ease-out;
+            transform: translateX(-100%);
+        }
+    }
+
+    .content_menu {
+        width: 50%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2555555;
+        background-color: #BCAF87;
+        transition: 0.5s ease-out;
+
+
+        @media (max-width: 1024px) {
+            min-width: 100%;
+        }
+
+        &.toggle {
+            padding: 0;
+            transition: 1s ease-out;
+
+            transform: translateX(100%);
+        }
+
+        ul {
+            list-style: none;
+            width: 200%;
+            padding: 50px;
+
+            li {
+                text-align: right;
+                padding-top: 15px;
+                position: relative;
+
+                a,
+                .marquee span {
+                    white-space: nowrap;
+                    font-size: clamp(24px, 7vw, 78px);
+                    padding: 0 1vw;
+                    line-height: 1.15s;
+                }
+
+                .marquee-container {
+                    position: relative;
+                    width: 100vw;
+                }
+
+                a {
+                    text-transform: capitalize;
+                    text-align: right;
+                    text-decoration: none;
+                    color: white;
+                    font-weight: 100;
+                    display: inline-block;
+                    font-size: 3.125rem;
+                    transition: opacity 0.4s;
+
+                    @media (max-width:1200px) {
+                        font-size: 2.5rem;
+                    }
+
+                    @media (max-width:500px) {
+                        font-size: 1.5rem;
+                    }
+
+                    &::before {
+                        all: initial;
+                        position: absolute;
+                        bottom: 60%;
+                        pointer-events: none;
+
+                    }
+
+                    &:hover {
+                        transition-duration: 0.1s;
+                        opacity: 0;
+                    }
+
+                    &:hover+.marquee_img {
+                        opacity: 1;
+                        transform: scale(1);
+                        transition: all 0.4s;
+                    }
+
+                    &:hover~.marquee .marquee__inner {
+                        opacity: 1;
+                        transform: translateX(-60px);
+                        transition: all 0.4s;
+                    }
+
+                    &.toggle {
+                        opacity: 0;
+                        transition: 0.2s ease-in;
+                    }
+                }
+
+                img {
+                    z-index: 2;
+                    pointer-events: none;
+                    position: absolute;
+                    height: 24vh;
+                    max-height: 600px;
+                    opacity: 0;
+                    left: 8%;
+                    top: 10%;
+                    transform: scale(0);
+                }
+
+                .marquee {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    overflow: hidden;
+                    color: rgb(214, 214, 214);
+                    pointer-events: none;
+
+                    .marquee__inner {
+                        width: fit-content;
+                        display: flex;
+                        position: relative;
+                        opacity: 0;
+                        transition: all 0.1s;
+                        transform: translateX(0px);
+                    }
+
+                    span {
+                        font-style: italic;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes hideFullPageMenu {
+
+    100% {
+        z-index: -1;
+    }
+}

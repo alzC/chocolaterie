@@ -1,0 +1,179 @@
+@font-face {
+	font-family: futura std;
+	font-style: normal;
+	font-weight: 400;
+	src: local("Futura Std"),
+		url(https://fonts.cdnfonts.com/s/30938/FuturaStdBook.woff) format("woff");
+}
+@font-face {
+	font-family: futura std;
+	font-style: italic;
+	font-weight: 400;
+	src: local("Futura Std"),
+		url(https://fonts.cdnfonts.com/s/30938/FuturaStdBookOblique.woff)
+			format("woff");
+}
+@font-face {
+	font-family: futura std;
+	font-style: normal;
+	font-weight: 300;
+	src: local("Futura Std"),
+		url(https://fonts.cdnfonts.com/s/30938/FuturaStdCondensedLight.woff)
+			format("woff");
+}
+@font-face {
+	font-family: futura std;
+	font-style: normal;
+	font-weight: 300;
+	src: local("Futura Std"),
+		url(https://fonts.cdnfonts.com/s/30938/FuturaStdLight.woff) format("woff");
+}
+@font-face {
+	font-family: futura std;
+	font-style: italic;
+	font-weight: 300;
+	src: local("Futura Std"),
+		url(https://fonts.cdnfonts.com/s/30938/FuturaStdCondensedLightObl.woff)
+			format("woff");
+}
+@font-face {
+	font-family: futura std;
+	font-style: italic;
+	font-weight: 300;
+	src: local("Futura Std"),
+		url(https://fonts.cdnfonts.com/s/30938/FuturaStdLightOblique.woff)
+			format("woff");
+}
+@font-face {
+	font-family: futura std;
+	font-style: normal;
+	font-weight: 500;
+	src: local("Futura Std"),
+		url(https://fonts.cdnfonts.com/s/30938/FuturaStdCondensed.woff)
+			format("woff");
+}
+@font-face {
+	font-family: futura-std;
+	font-style: normal;
+	font-weight: 500;
+	src: local("Futura Std"),
+		url(https://fonts.cdnfonts.com/s/30938/FuturaStdMedium.woff) format("woff");
+}
+@font-face {
+	font-family: futura std;
+	font-style: italic;
+	font-weight: 500;
+	src: local("Futura Std"),
+		url(https://fonts.cdnfonts.com/s/30938/FuturaStdCondensedOblique.woff)
+			format("woff");
+}
+@font-face {
+	font-family: futura std;
+	font-style: italic;
+	font-weight: 500;
+	src: local("Futura Std"),
+		url(https://fonts.cdnfonts.com/s/30938/FuturaStdMediumOblique.woff)
+			format("woff");
+}
+@font-face {
+	font-family: futura std;
+	font-style: normal;
+	font-weight: 650;
+	src: local("Futura Std"),
+		url(https://fonts.cdnfonts.com/s/30938/FuturaStdHeavy.woff) format("woff");
+}
+@font-face {
+	font-family: futura std;
+	font-style: italic;
+	font-weight: 650;
+	src: local("Futura Std"),
+		url(https://fonts.cdnfonts.com/s/30938/FuturaStdHeavyOblique.woff)
+			format("woff");
+}
+@font-face {
+	font-family: futura std;
+	font-style: normal;
+	font-weight: 700;
+	src: local("Futura Std"),
+		url(https://fonts.cdnfonts.com/s/30938/FuturaStdBold.woff) format("woff");
+}
+@font-face {
+	font-family: futura std;
+	font-style: normal;
+	font-weight: 700;
+	src: local("Futura Std"),
+		url(https://fonts.cdnfonts.com/s/30938/FuturaStdCondensedBold.woff)
+			format("woff");
+}
+@font-face {
+	font-family: futura std;
+	font-style: italic;
+	font-weight: 700;
+	src: local("Futura Std"),
+		url(https://fonts.cdnfonts.com/s/30938/FuturaStdBoldOblique.woff)
+			format("woff");
+}
+@font-face {
+	font-family: futura std;
+	font-style: italic;
+	font-weight: 700;
+	src: local("Futura Std"),
+		url(https://fonts.cdnfonts.com/s/30938/FuturaStdCondensedBoldObl.woff)
+			format("woff");
+}
+@font-face {
+	font-family: futura std;
+	font-style: normal;
+	font-weight: 750;
+	src: local("Futura Std"),
+		url(https://fonts.cdnfonts.com/s/30938/FuturaStdCondensedExtraBd.woff)
+			format("woff");
+}
+@font-face {
+	font-family: futura-std;
+	font-style: normal;
+	font-weight: 750;
+	src: local("Futura Std"),
+		url(https://fonts.cdnfonts.com/s/30938/FuturaStdExtraBold.woff)
+			format("woff");
+}
+@font-face {
+	font-family: futura std;
+	font-style: italic;
+	font-weight: 750;
+	src: local("Futura Std"),
+		url(https://fonts.cdnfonts.com/s/30938/FuturaStdCondExtraBoldObl.woff)
+			format("woff");
+}
+@font-face {
+	font-family: futura std;
+	font-style: italic;
+	font-weight: 750;
+	src: local("Futura Std"),
+		url(https://fonts.cdnfonts.com/s/30938/FuturaStdExtraBoldOblique.woff)
+			format("woff");
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: futura-std, cursive;
+	font-weight: 300;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+body,
+html {
+	height: fit-content;
+	width: 100%;
+	font-family: futura-std;
+	height: fit-content;
+	overflow-x: hidden;
+
+	scroll-behavior: smooth;
+}
+body {
+	overflow-x: hidden;
+	overflow-y: hidden;
+}

@@ -1,0 +1,148 @@
+.fullPageMenu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 15;
+  height: 10px;
+  width: 100%;
+  color: white;
+  display: flex;
+}
+.fullPageMenu.toggle {
+  animation: hideFullPageMenu 0.5s ease 0.5s forwards;
+}
+.fullPageMenu .left_content {
+  content: "";
+  width: 50%;
+  height: 100vh;
+  background-color: #BCAF87;
+  transition: 0.5s ease-out;
+  z-index: 255555;
+}
+.fullPageMenu .left_content.toggle {
+  transition: 1s ease-out;
+  transform: translateX(-100%);
+}
+.fullPageMenu .content_menu {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2555555;
+  background-color: #BCAF87;
+  transition: 0.5s ease-out;
+}
+@media (max-width: 1024px) {
+  .fullPageMenu .content_menu {
+    min-width: 100%;
+  }
+}
+.fullPageMenu .content_menu.toggle {
+  padding: 0;
+  transition: 1s ease-out;
+  transform: translateX(100%);
+}
+.fullPageMenu .content_menu ul {
+  list-style: none;
+  width: 200%;
+  padding: 50px;
+}
+.fullPageMenu .content_menu ul li {
+  text-align: right;
+  padding-top: 15px;
+  position: relative;
+}
+.fullPageMenu .content_menu ul li a,
+.fullPageMenu .content_menu ul li .marquee span {
+  white-space: nowrap;
+  font-size: clamp(24px, 7vw, 78px);
+  padding: 0 1vw;
+  line-height: 1.15s;
+}
+.fullPageMenu .content_menu ul li .marquee-container {
+  position: relative;
+  width: 100vw;
+}
+.fullPageMenu .content_menu ul li a {
+  text-transform: capitalize;
+  text-align: right;
+  text-decoration: none;
+  color: white;
+  font-weight: 100;
+  display: inline-block;
+  font-size: 3.125rem;
+  transition: opacity 0.4s;
+}
+@media (max-width: 1200px) {
+  .fullPageMenu .content_menu ul li a {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .fullPageMenu .content_menu ul li a {
+    font-size: 1.5rem;
+  }
+}
+.fullPageMenu .content_menu ul li a::before {
+  all: initial;
+  position: absolute;
+  bottom: 60%;
+  pointer-events: none;
+}
+.fullPageMenu .content_menu ul li a:hover {
+  transition-duration: 0.1s;
+  opacity: 0;
+}
+.fullPageMenu .content_menu ul li a:hover + .marquee_img {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 0.4s;
+}
+.fullPageMenu .content_menu ul li a:hover ~ .marquee .marquee__inner {
+  opacity: 1;
+  transform: translateX(-60px);
+  transition: all 0.4s;
+}
+.fullPageMenu .content_menu ul li a.toggle {
+  opacity: 0;
+  transition: 0.2s ease-in;
+}
+.fullPageMenu .content_menu ul li img {
+  z-index: 2;
+  pointer-events: none;
+  position: absolute;
+  height: 24vh;
+  max-height: 600px;
+  opacity: 0;
+  left: 8%;
+  top: 10%;
+  transform: scale(0);
+}
+.fullPageMenu .content_menu ul li .marquee {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  color: rgb(214, 214, 214);
+  pointer-events: none;
+}
+.fullPageMenu .content_menu ul li .marquee .marquee__inner {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  position: relative;
+  opacity: 0;
+  transition: all 0.1s;
+  transform: translateX(0px);
+}
+.fullPageMenu .content_menu ul li .marquee span {
+  font-style: italic;
+}
+
+@keyframes hideFullPageMenu {
+  100% {
+    z-index: -1;
+  }
+}/*# sourceMappingURL=fullpageMenu.css.map */
