@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import '../../styles/Navbar/navbar.css'
 import MenuToggle from '../MenuToggle/MenuToggle'
 import FullPageMenu from '../FullPageMenu/FullPageMenu'
